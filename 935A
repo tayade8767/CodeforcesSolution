@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+
+// int prime(int n)
+// {
+//     for(int i=2;i<=n/2;i++)
+//     {
+//         if(n%i==0)
+//         {
+//             return 0;
+//             break;
+//         }
+//     }
+//     return 1;
+// }
+int main()
+{
+    
+    
+    
+    // int i,n,cnt=1;
+    // cin>>n;
+    // for(i=2;i*i<n;i++)
+    // {
+    //     if(n%i==0)
+    //         cnt+=2;
+    // }
+    // if((double)sqrt(n)==(int)sqrt(n))
+    // {
+    //     cnt++;
+    // }
+    // cout<<cnt<<endl;
+      int n,count=1;
+      cin>>n;
+      for(int i=2;i*i<n;i++)
+      {
+          if(n%i==0)
+          {
+              count+=2;
+          }
+      }
+      if(double(sqrt(n))==int(sqrt(n)))
+      {
+          count++;
+      }
+       
+          cout<<count<<endl;
+       
+    return 0;
+}
